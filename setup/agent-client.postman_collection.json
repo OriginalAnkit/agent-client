@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "cdf0e14d-ec9b-4a23-82dc-fe0d727b7ced",
+		"name": "agent-client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create agent and client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InRlc3QgdG9rZW4iLCJpYXQiOjE1MTYyMzkwMjJ9.ZgDB4ZYa7GaqgvIMyfjpwZmaqLOlVeqkgGYgZFpSeJY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"agencyDetails\":{\n\t\t\"AgencyId\":\"age_456\",\n\t\t\"Name\":\"HCL\",\n\t\t\"PhoneNumber\":\"90977867\",\n\t\t\"State\":\"Rajesthan\",\n\t\t\"City\":\"Jaipur\",\n\t\t\"Address1\":\"Malipur\",\n\t\t\"Address2\":\"Main Road\"\n\t},\n\t\"clientDetails\":{\n\t\t\"ClientId\":\"cli_456\",\n\t\t\"Name\":\"soler tech\",\n\t\t\"Email\":\"silver@test.com\",\n\t\t\"PhoneNumber\":\"99898989\",\n\t\t\"TotalBill\":234,\n\t\t\"AgencyId\":\"age_456\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createAgency?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createAgency"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InRlc3QgdG9rZW4iLCJpYXQiOjE1MTYyMzkwMjJ9.ZgDB4ZYa7GaqgvIMyfjpwZmaqLOlVeqkgGYgZFpSeJY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Silver\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updateClient/cli_123",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateClient",
+						"cli_123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getAgentWithMaxBiller",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InRlc3QgdG9rZW4iLCJpYXQiOjE1MTYyMzkwMjJ9.ZgDB4ZYa7GaqgvIMyfjpwZmaqLOlVeqkgGYgZFpSeJY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/getAgentWithMaxBiller",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getAgentWithMaxBiller"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
