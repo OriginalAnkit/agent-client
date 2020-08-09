@@ -1,3 +1,4 @@
  PORT = 3000
  SECRET = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InRlc3QgdG9rZW4iLCJpYXQiOjE1MTYyMzkwMjJ9.ZgDB4ZYa7GaqgvIMyfjpwZmaqLOlVeqkgGYgZFpSeJY
+ MONGOURL = "mongodb://localhost:27017/agency"
 

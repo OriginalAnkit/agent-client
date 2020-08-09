@@ -7,5 +7,6 @@ var path_1 = __importDefault(require("path"));
 var constants = dotenv_1.default.config({ path: path_1.default.join(__dirname, "../.env") }).parsed;
 module.exports = {
     PORT: constants.PORT,
-    SECRET: constants.SECRET
+    SECRET: constants.SECRET,
+    MONGOURL: constants.MONGOURL
 };
