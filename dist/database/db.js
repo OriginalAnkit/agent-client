@@ -9,5 +9,5 @@ mongoose_1.default.connection.once('open', function () {
     console.info('Connected to Mongo via Mongoose');
 });
 mongoose_1.default.connection.on('error', function (err) {
-    console.error('Unable to connect to Mongo via Mongoose', err);
+    console.error('Unable to connect to Mongo via Mongoose');
 });
